@@ -103,3 +103,19 @@ a.lien:active {
     height: 20px;
     margin-top: -20px;
 }
+
+#contacts-table table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#contacts-table td, #contacts-table th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+#contacts-table tr:nth-child(even) {
+    background-color: #dddddd;
+}

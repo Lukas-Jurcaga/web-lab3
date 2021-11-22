@@ -9,7 +9,21 @@ const server = app.listen(port,function(){
     console.log(`Cart app listening at http://localhost:${port}`)
 });
 
-app.use(express.static('public'))
+app.use(express.static('public'));
+
+app.set('view engine', 'ejs');
 app.get('/', function(req,res){
-    res.sendFile('index.html', {root: __dirname})
+    res.render('index')
+});
+
+app.get('/contacts', function(req,res){
+    res.render('contacts')
+});
+
+app.get('/login', function(req,res){
+    res.render('login')
+});
+
+app.get('/register', function(req,res){
+    res.render('register')
 });
