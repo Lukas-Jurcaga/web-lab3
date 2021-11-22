@@ -1,0 +1,48 @@
+<%- include('header'); -%>
+<div class="content">
+    <h1>Selected articles</h1>
+    <table id="catalog">
+        <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Category</th>
+            <th scope="col">Supplier</th>
+            <th scope="col">Price</th>
+            <th scope="col">vat</th>
+            <th scope="col">stock</th>
+            <th scope="col">Critical Stock</th>
+            <th scope="col">Reference</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                <%= article.name %>
+            </td>
+            <td>
+                <%= article.category %>
+            </td>
+            <td>
+                <%= article.supplier %>
+            </td>
+            <td>
+                <%= article.price %>
+            </td>
+            <td>
+                <%= article.vat %>
+            </td>
+            <td>
+                <%= article.stock %>
+            </td>
+            <td>
+                <%= article.critical_stock %>
+            </td>
+            <td>
+                <%= article.reference %>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<br>
+<%- include('footer'); -%>

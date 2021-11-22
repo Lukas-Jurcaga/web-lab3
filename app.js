@@ -31,3 +31,11 @@ app.get('/login', function(req,res){
 app.get('/register', function(req,res){
     res.render('register')
 });
+
+app.get('/api/hwu.css', function(req,res){
+    res.sendFile("C:\\Users\\ljurc\\WebstormProjects\\web-lab3\\public\\hwu.css")
+});
+
+app.get('/api/hwu.png', function(req,res){
+    res.sendFile("C:\\Users\\ljurc\\WebstormProjects\\web-lab3\\public\\hwu.png")
+});

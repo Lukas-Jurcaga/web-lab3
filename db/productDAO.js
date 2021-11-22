@@ -13,7 +13,8 @@ function findAll(callback) {
 }
 
 function findByID(reference, callback) {
-    const selectProducts = `SELECT * from article where reference like '${reference}';`;
+    const selectProducts = `SELECT * from article where reference = '${reference}';`;
+    console.log(selectProducts)
     database.getResult(selectProducts, function(err, rows) {
         if (!err) {
             callback(null, rows);

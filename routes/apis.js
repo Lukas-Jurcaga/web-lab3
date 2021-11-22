@@ -1,5 +1,6 @@
 const express = require('express');
 const productController = require('../controllers/productController');
+const resourceController = require('../controllers/resourceController')
 
 //define a router and create routes
 const router = express.Router();
@@ -9,6 +10,5 @@ const router = express.Router();
 //route for listing all products
 router.get('/api/catalogue', productController.getCatalogue);
 router.get('/api/article/:id', productController.getProductByID);
-
 //export router
 module.exports = router;
