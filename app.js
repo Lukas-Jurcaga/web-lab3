@@ -3,6 +3,10 @@ const express = require("express");
 //Creating the application
 const app = express();
 
+//pass requests to middleware router
+const router = require('./routes/apis');
+app.use(router)
+
 //makes app listen to port
 const port = process.argv[2] || process.argv.PORT || 3000;
 const server = app.listen(port,function(){
